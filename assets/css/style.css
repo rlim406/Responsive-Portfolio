@@ -183,12 +183,26 @@ form {
 
 @media screen and (max-width: 980px) {
   #maincontent {
-    width: 600px;
-    margin-left: 60px;
+    width: 650px;
+    margin-left: 30px;
   }
+
+  @keyframes bc {
+    from {
+      background-color: #155e61;
+    }
+    to {
+      background-color: #5bc7ca;
+    }
+  }
+
   #name {
-    margin-left: 60px;
+    margin-left: 30px;
+    background-color: #5bc7ca;
+    animation-name: bc;
+    animation-duration: 10s;
   }
+
   #options {
     margin-right: auto;
   }
@@ -221,13 +235,27 @@ form {
 
 @media screen and (max-width: 768px) {
   #maincontent {
-    width: 550px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
-  #name {
-    margin-left: 40px;
+
+  @keyframes bc {
+    from {
+      background-color: #155e61;
+    }
+    to {
+      background-color: #5bc7ca;
+    }
   }
+
+  #name {
+    margin-left: 30px;
+    background-color: #5bc7ca;
+    animation-name: bc;
+    animation-duration: 10s;
+  }
+
   #options {
     margin-right: auto;
   }
@@ -260,19 +288,38 @@ form {
 
 @media screen and (max-width: 640px) {
   #maincontent {
-    width: 500px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  #profile {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+  }
+
+  @keyframes bc {
+    from {
+      background-color: #155e61;
+    }
+    to {
+      background-color: #5bc7ca;
+    }
+  }
+
   #name {
-    width: 700px;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
+    background-color: #5bc7ca;
+    animation-name: bc;
+    animation-duration: 10s;
   }
 
   #options {
-    width: 700px;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -286,6 +333,8 @@ form {
   #music {
     width: 250px;
     height: 250px;
+    left: 60px;
+    right: 75px;
   }
 
   #text-block,
@@ -293,13 +342,13 @@ form {
   #text-block4 {
     width: 200px;
     padding: 25px;
-    left: 15px;
+    left: 75px;
   }
 
   #text-block1,
   #text-block3 {
     width: 200px;
     padding: 25px;
-    left: 295px;
+    left: 75px;
   }
 }
