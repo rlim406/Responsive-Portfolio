@@ -181,9 +181,9 @@ form {
 
 /* media queries */
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
   #maincontent {
-    width: 650px;
+    max-width: 960px;
     margin-left: 30px;
   }
 
@@ -201,6 +201,60 @@ form {
     background-color: #5bc7ca;
     animation-name: bc;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  #options {
+    margin-right: auto;
+  }
+
+  /* portfolio */
+  #abstract,
+  #skyline,
+  #sushi,
+  #orchid,
+  #music {
+    width: 300px;
+    height: 300px;
+  }
+
+  #text-block,
+  #text-block2,
+  #text-block4 {
+    width: 250px;
+    padding: 20px;
+    left: 20px;
+  }
+
+  #text-block1,
+  #text-block3 {
+    width: 250px;
+    padding: 20px;
+    left: 350px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #maincontent {
+    max-width: 650px;
+    margin-left: 30px;
+  }
+
+  @keyframes bc {
+    from {
+      background-color: #155e61;
+    }
+    to {
+      background-color: #5bc7ca;
+    }
+  }
+
+  #name {
+    margin-left: 30px;
+    background-color: #5bc7ca;
+    animation-name: bc;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
 
   #options {
@@ -235,7 +289,7 @@ form {
 
 @media screen and (max-width: 768px) {
   #maincontent {
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -254,6 +308,7 @@ form {
     background-color: #5bc7ca;
     animation-name: bc;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
 
   #options {
@@ -288,7 +343,7 @@ form {
 
 @media screen and (max-width: 640px) {
   #maincontent {
-    width: 400px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -316,6 +371,7 @@ form {
     background-color: #5bc7ca;
     animation-name: bc;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
 
   #options {
